@@ -6,6 +6,7 @@ cwd=$(dirname $0)
 
 # Source global configurations.
 source "${cwd}/config.sh"
+echo ${cwd} > /Users/pdk/test
 
 # Source lib functions.
 source "${cwd}/lib.sh"
@@ -23,7 +24,7 @@ tmux_session_info+=(["foreground"]="colour234")
 tmux_session_info+=(["background"]="colour148")
 tmux_session_info+=(["separator"]="${separator_right_bold}")
 #tmux_session_info+=(["separator_fg"]="default")
-register_segment "tmux_session_info"
+#register_segment "tmux_session_info"
 
 declare -A hostname
 hostname+=(["script"]="${segments_path}/hostname.sh")
