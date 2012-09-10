@@ -1,5 +1,5 @@
 # tmux-powerline
-This is a set of scripts (segments) for making a nice and dynamic tmux status-bar where elements can come and disappears depending on events. I really like the look of [Lokaltog/vim-powerline](https://github.com/Lokaltog/vim-powerline) and I decided I wanted the same for tmux.
+This is a set of scripts (segments) for making a nice and dynamic tmux statusbar where elements can come and disappears depending on events. I really like the look of [Lokaltog/vim-powerline](https://github.com/Lokaltog/vim-powerline) and I decided I wanted the same for tmux.
 
 The following segments exists for now:
 * LAN & WAN IP addresses.
@@ -7,12 +7,12 @@ The following segments exists for now:
 * New mail count for Maildir and Apple Mail.
 * GNU/Linux and Macintosh OS X battery status (uses [richo/dotfiles/bin/battery](https://github.com/richoH/dotfiles/blob/master/bin/battery)).
 * Weather in Celsius, Fahrenheit and Kelvin using Google's weather API.
-* System load and uptime.
+* System load, cpu usage and uptime.
 * Git, SVN and Mercurial branch in CWD.
 * Date and time.
 * Hostname.
 * tmux info.
-* CWD in pane
+* CWD in pane.
 * Current X keyboard layout.
 
 Check [segments/](https://github.com/erikw/tmux-powerline/tree/master/segments) for more undocumented segments and details.
@@ -148,4 +148,4 @@ register_segment "time"							# Registers the name of the array declared above.
 ```
 # Hacking
 
-This project can only gain positivly from contributions. Fork today and make your own enhancments and segments to share back! 
+This project can only gain positively from contributions. Fork today and make your own enhancments and segments to share back!
