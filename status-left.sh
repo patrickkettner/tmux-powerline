@@ -23,7 +23,7 @@ tmux_session_info+=(["script"]="${segments_path}/tmux_session_info.sh")
 tmux_session_info+=(["foreground"]="colour234")
 tmux_session_info+=(["background"]="colour148")
 tmux_session_info+=(["separator"]="${separator_right_bold}")
-#tmux_session_info+=(["separator_fg"]="default")
+tmux_session_info+=(["separator_fg"]="default")
 #register_segment "tmux_session_info"
 
 declare -A hostname
@@ -54,6 +54,14 @@ vcs_branch+=(["foreground"]="colour88")
 vcs_branch+=(["background"]="colour29")
 vcs_branch+=(["separator"]="${separator_right_bold}")
 register_segment "vcs_branch"
+
+declare -A background_jobs
+background_jobs+=(["script"]="${segments_path}/jobs.sh")
+background_jobs+=(["foreground"]="colour45")
+background_jobs+=(["background"]="colour0")
+background_jobs+=(["separator"]="${separator_right_bold}")
+register_segment "background_jobs"
+
 
 # Print the status line in the order of registration above.
 print_status_line_left
