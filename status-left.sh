@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/local/bin/bash
 #Print the status-left for tmux.
 #
 # The powerline root directory.
